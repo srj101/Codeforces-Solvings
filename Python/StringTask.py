@@ -1,0 +1,18 @@
+string = input()
+string = string.replace('A','')
+string = string.replace('E','')
+string = string.replace('I','')
+string = string.replace('O','')
+string = string.replace('U','')
+string = string.replace('a','')
+string = string.replace('e','')
+string = string.replace('i','')
+string = string.replace('o','')
+string = string.replace('u','')
+string = string.replace('y','')
+string = string.replace('Y','')
+string = string.lower()
+def addDot(c):
+    return "."+c
+finalAns = "".join(list(map(addDot,list(string))))
+print(finalAns)
