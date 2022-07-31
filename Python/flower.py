@@ -1,14 +1,16 @@
 from operator import le
-from turtle import *
+import turtle
+flower = turtle.Turtle()
+flower.speed(0)
 
 
-def flower():
+def flowerr():
     for i in range(300):
-        circle(190-i, 90)
-        left(90)
-        circle(190-i, 90)
-        left(18)
+        flower.circle(190-i, 90)
+        flower.left(90)
+        flower.circle(190-i, 90)
+        flower.left(18)
 
 
-flower()
-mainloop()
+flowerr()
+flower.mainloop()

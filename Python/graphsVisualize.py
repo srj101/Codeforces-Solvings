@@ -1,0 +1,15 @@
+from pyvis.network import Network
+net = Network(directed=True)
+net.add_node(0)
+net.add_node(1)
+net.add_node(4)
+net.add_node(7)
+net.add_node(11)
+net.add_edge(0, 1)
+net.add_edge(4, 11)
+net.add_edge(11, 7)
+net.add_edge(7, 1)
+net.add_edge(0, 11)
+
+net.show("basic.html")
+quit()
